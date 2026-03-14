@@ -1,0 +1,17 @@
+{
+  "name": "upwork-shortlist-demo",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "dev:web": "node api.js && npm --prefix apps/web run dev",
+    "dev:api": "node api.js && npm --prefix apps/api run dev",
+    "dev:mobile": "node api.js && npm --prefix apps/mobile run start",
+    "build:web": "npm --prefix apps/web run build",
+    "start:api": "node api.js && npm --prefix apps/api run start",
+    "lint:web": "npm --prefix apps/web run lint",
+    "docker:up": "docker compose up --build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
